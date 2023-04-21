@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR GAME</title>
+    <Link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input id="result-el" type="text" onclick="display(value)"   
+                    >
+                   
+                </div>
+                <div>
+                    <input type="button" value="8" onclick="display('8')"
+                    style="background-color: brown;">
+                    <input type="button" value="6" onclick="display('6')"
+                    style="background-color: brown;">
+                    <input type="button" value="3" onclick="display('3')"
+                    style="background-color: brown;">
+                    <input type="button" value="-4" onclick="display('-4')"
+                    style="background-color: brown;">
+                </div>
+                <div>
+                    <input type="button" value="5" onclick="display('5')" 
+                    style="background-color: brown;">
+                    <input type="button" value="2" onclick="display('2')"
+                    style="background-color: brown;">
+                    <input type="button" value="7" onclick="display('7')"
+                    style="background-color: brown;">
+                    <input type="button" value="1" onclick="display('1')"
+                    style="background-color: brown;">
+                </div>
+                <div>
+                    <input type="button" value="9" onclick="display('9')"
+                    style="background-color: brown;">
+                    <input type="button" value="-2" onclick="display('-2')"
+                    style="background-color: brown;">
+                    <input type="button" value="-6" onclick="display('-6')"
+                    style="background-color: brown;">
+                    <input type="button" value="4" onclick="display('4')"
+                    style="background-color: brown;">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="display('0')" 
+                    style="background-color: brown;">
+                    <input type="button" value="-3" onclick="display('-3')" 
+                    style="background-color: brown;">
+                    <input type="button" value="-5" onclick="display('-5')"
+                    style="background-color: brown;">
+                    <input type="button" value="-1" onclick="display('-1')"
+                    style="background-color: brown;">
+                </div>
+                <div>
+                    
+                    <button style="font-weight:bold; width:60px;height:50px; 
+                    cursor:pointer; background-color:darkred; color:white;"
+                    class="visible" onclick="document.getElementById('result-el').value = ''">Clear</button>
+                    <input type="button" value="*" onclick="display('*')" class="visible">
+                    <input type="button" value="+" onclick="display('+')"
+                    class="visible">
+                    <input type="button" value="-" onclick="display('-')"
+                    class="visible">
+                    
+                </div>
+            </form>
+            <div class="game">
+            <h2>Play Game</h2>
+            <p id="message-el">Want to play round?</p>
+            <p>SCORE:</p>
+            <p id="score-el">0</p>
+            <input type="button" value="START" onclick="solve()" style="font-weight:bold;
+             background-color:green; border:none; color:white; padding:15px 32px; 
+             text-align:center; font-size:1rem; cursor:pointer; border-radius:5px"
+             class="visible">
+            
+        </div>
+        <div class="game2">
+            <h6>Get a sum of '12' by evaluation or by clicking '12'
+                <br> Click on the START button to view score and result. 
+                <br> Click brown buttons to view numbers.</h6>
+
+        </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
